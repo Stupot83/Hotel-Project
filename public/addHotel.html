@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1> Add Hotel </h1>
+    <nav>
+        <ul>
+            <li>
+                    <a href="/" title="Go Home">Home</a>
+            </li>
+            <li>
+                <a href="addHotel.html">Add Hotel</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <form method="post" action="/create-hotel">
+            <label>Hotel Name</label>
+            <input placeholder="Hotel Name" name="hotelName">
+            <label>Hotel Location</label>
+            <input placeholder="Hotel Location" name="hotelLocation">
+            <label>Hotel Rating</label>
+            <input placeholder="Hotel Rating" name="hotelRating">
+            <button>Submit</button>
+        </form>
+    </section>
+    <section>
+            <form method="get" action="/list-hotels">
+            </form>
+        </section>
+</body>
+</html>
